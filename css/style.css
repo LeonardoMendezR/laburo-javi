@@ -1,6 +1,12 @@
 main > .container{
     padding: 30px 0;
 }
+.cuotas{
+    display: flex;
+    justify-content: center;
+    background-color: dimgray;
+    color: white;
+}
 .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
