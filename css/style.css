@@ -7,6 +7,13 @@ main > .container{
     background-color: dimgray;
     color: white;
 }
+.sale{
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+
+}
 .foto-principal{
     width: 75vw;
     max-width: 1000px;
