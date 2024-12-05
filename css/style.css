@@ -13,9 +13,217 @@ main > .container{
     min-width: 320px;
     margin:auto;
 }
-.img1{
-    width: 100%;
+.navbar {
+  background-color: black; /* Fondo negro */
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0; /* Posición superior de 0 */
+  left: 0; /* Anclado al lado izquierdo */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra para diferenciarla */
 }
+
+body {
+  padding-top: 60px; /* Espacio para que no se superponga el contenido con la barra */
+}
+
+/* Estilo general de la barra de navegación */
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between; /* Espacio distribuido */
+  align-items: center; /* Alineación vertical */
+}
+.navbar {
+  background-color: #1a1a1a; /* Fondo negro suave */
+  position: fixed; /* Fija la barra en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 1000; /* Siempre visible */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
+  height: 100px; /* Incrementa la altura de la barra */
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo del logo */
+.navbar-brand {
+  font-size: 2rem; /* Aumenta el tamaño del logo */
+  font-weight: bold; /* Destaca el logo */
+  color: #ffffff; /* Mantén el logo blanco */
+  text-transform: uppercase; /* Mayúsculas para más impacto */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilo de los enlaces de navegación */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los enlaces */
+  margin-left: 30px; /* Desplaza los enlaces hacia la derecha del logo */
+}
+
+.nav-links a {
+  font-size: 1.5rem; /* Agranda el texto de los enlaces */
+  color: #e0e0e0; /* Color gris claro */
+  font-weight: 500; /* Hace que el texto sea más visible */
+  padding: 10px 20px; /* Espaciado extra alrededor de los enlaces */
+  transition: color 0.3s, background-color 0.3s; /* Animaciones suaves */
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.nav-links a:hover {
+  color: #27ae60; /* Verde llamativo al pasar el cursor */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo sutil al pasar el mouse */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo del formulario de búsqueda */
+
+form {
+  flex-grow: 1; /* Permite que el campo de búsqueda crezca dinámicamente */
+  margin: 0 20px; /* Espaciado entre "Locales" y "Carrito" */
+}
+
+form .form-control {
+  height: 50px; /* Campo de búsqueda más alto */
+  font-size: 1.2rem; /* Texto más grande */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 1px solid #e0e0e0; /* Color del borde */
+  width: 100%; /* Ocupa el ancho disponible */
+  max-width: calc(100% - 40px); /* Limita el ancho para dejar unos píxeles de espacio */
+}
+
+/* Estilo de los botones */
+.btn {
+  height: 50px; /* Botones más grandes */
+  font-size: 1.2rem; /* Texto más grande en los botones */
+  font-weight: bold; /* Resalta los botones */
+  border-radius: 8px; /* Bordes redondeados */
+  color: #000000; /* Texto blanco */
+  background-color: #ffffff; /* Fondo verde */
+  border: none; /* Sin borde */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+  background-color: #219150; /* Fondo verde oscuro al pasar el mouse */
+}
+
+/* Ajuste del contenido del cuerpo */
+body {
+  padding-top: 110px; /* Espaciado para evitar que el contenido quede oculto */
+}
+
+
+.nav-links a:hover {
+  color: #27ae60; /* Efecto hover */
+}
+
+.ms-auto {
+  margin-left: auto; /* Mueve elementos como carrito y login al extremo derecho */
+}
+
+
+.form-control {
+  flex-grow: 1; /* Permite que el buscador ocupe el espacio disponible */
+  margin-right: 10px; /* Espacio a la derecha del buscador */
+}
+
+.btn {
+  margin-left: 10px; /* Espacio a la izquierda de los botones */
+}
+
+/* Alineación adicional para el logo y los enlaces */
+.navbar-brand {
+  margin-right: 20px; /* Espacio entre el logo y el primer enlace */
+}
+.form-control {
+  flex-grow: 1; /* Permite que el buscador ocupe el espacio disponible */
+  margin-right: 10px; /* Espacio a la derecha del buscador */
+}
+
+.btn {
+  margin-left: 10px; /* Espacio a la izquierda de los botones */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #27ae60;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('../images/Fotogrande.webp') no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: left;
+  padding: 0 50px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h2, .hero p, .hero .btn {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero .btn {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #1e8449;
+}
+
 .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
