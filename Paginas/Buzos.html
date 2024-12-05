@@ -13,56 +13,46 @@
       <div class="cuotas">
         <h6>6 cuotas sin interes</h6>
      </div>
- <header data-bs-theme="dark">
-   <div class="navbar navbar-expand-lg navbar-dark bg-dark ">
-     <div class="container">
-       <a href="../index.html" class="navbar-brand ">
-         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
-           <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-         </svg>
-         <strong>Plaza club</strong>
-       </a>
-       <button class="navbar-toggler" type="button" 
-         data-bs-toggle="collapse" data-bs-target="#navbarHeader" 
-         aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-         
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarHeader">
-         
-         
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-           <li class="nav-item"></li>
-             <a href="#" class="nav-link active">Ofertas</a>
-           </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Coleccion
-           </a>
-           <ul class="dropdown-menu">
-             <li><a class="dropdown-item" href="./Remeras.html">Remeras</a></li>
-             <li><a class="dropdown-item" href="./Pantalones.html">Pantalones</a></li>
-             <li><a class="dropdown-item" href="#">Buzos</a></li>
-           </ul>
-         </li>
-         <li class="nav-item">
-           <a href="#" class="nav-link active">Locales</a>
-         </li>
-         </ul>
-         <button id="toggle-carrito" onclick="toggleCarrito()">Carrito</button>
-
-       <div class="container-fluid">
-         <form class="d-flex" role="search">
-           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-           <a href="./Login.html" class="btn btn-primary">Login</a>
-         </form>
-
-       </div>
-       </div>
-     </div>
-   </div>
- </header>
-
+     <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag me-2" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+            <strong>Plaza Club</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Colección
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../Paginas/Remeras.html">Remeras</a></li>
+                  <li><a class="dropdown-item" href="../Paginas/Pantalones.html">Pantalones</a></li>
+                  <li><a class="dropdown-item" href=".,/Paginas/Buzos.html">Buzos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Locales</a>
+              </li>
+            </ul>
+            <form class="d-flex me-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
+            <a href="#" class="btn btn-light me-2" onclick="toggleCarrito()">Carrito</a>
+            <a href="./Login.html" class="btn btn-light">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
   <!-- Product Grid -->
 <main class="container my-5">
     <div class="row row-cols-1 row-cols-md-3 g-4">
