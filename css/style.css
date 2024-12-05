@@ -7,6 +7,15 @@ main > .container{
     background-color: dimgray;
     color: white;
 }
+.foto-principal{
+    width: 75vw;
+    max-width: 1000px;
+    min-width: 320px;
+    margin:auto;
+}
+.img1{
+    width: 100%;
+}
 .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

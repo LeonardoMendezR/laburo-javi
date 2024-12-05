@@ -65,7 +65,11 @@
   </header>
 
     <!-- Hero Section -->
+     <div class="foto-principal">
+    <img class="img1" src="./images/Fotogrande.webp" >
+  </div>
     <section class="hero bg-light text-center py-5">
+      
       <div class="container">
         <h1 class="display-4">Bienvenido a Plaza club</h1>
         <p class="lead">Encuentra tu estilo, mejora tu rendimiento.</p>
@@ -74,49 +78,44 @@
     </section>
 
   <!-- Product Grid -->
-  <main class="container my-5">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- Producto 1 -->
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-img-top bg-secondary" style="height: 200px;">
-            <img src="">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Producto 1</h5>
-            <p class="card-text">Precio: $10</p>
-            <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 1', 10)">Agregar al Carrito</button>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 2 -->
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-img-top bg-secondary" style="height: 200px;">
-            <!-- Imagen aquí -->
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Producto 2</h5>
-            <p class="card-text">Precio: $20</p>
-            <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 2', 20)">Agregar al Carrito</button>
-          </div>
-        </div>
-      </div>
-      <!-- Producto 3 -->
-      <div class="col">
-        <div class="card h-100 text-center">
-          <div class="card-img-top bg-secondary" style="height: 200px;">
-            <!-- Imagen aquí -->
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Producto 3</h5>
-            <p class="card-text">Precio: $30</p>
-            <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 3', 30)">Agregar al Carrito</button>
-          </div>
+<main class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <!-- Producto 1 -->
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="./images/remera.webp" class="card-img-top img-fluid" alt="Remera" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Remera</h5>
+          <p class="card-text">Precio: $10</p>
+          <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 1', 10)">Agregar al Carrito</button>
         </div>
       </div>
     </div>
-  </main>
+    <!-- Producto 2 -->
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="./images/Bermuda.jpeg" class="card-img-top img-fluid" alt="Bermuda" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Remera</h5>
+          <p class="card-text">Precio: $20</p>
+          <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 2', 20)">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+    <!-- Producto 3 -->
+    <div class="col">
+      <div class="card h-100 text-center">
+        <img src="./images/Buzos.jpeg" class="card-img-top img-fluid" alt="Buzos" style="height: 200px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">Buzos</h5>
+          <p class="card-text">Precio: $30</p>
+          <button class="btn btn-dark" onclick="agregarAlCarrito('Producto 3', 30)">Agregar al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
       
   <div id="carrito" style="display: none;">
     <h2>Carrito de Compras</h2>
