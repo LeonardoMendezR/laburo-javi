@@ -98,4 +98,5 @@ function cerrarCarrito() {
 }
 
 
+
 window.onload = cargarCarritoDesdeLocalStorage;
