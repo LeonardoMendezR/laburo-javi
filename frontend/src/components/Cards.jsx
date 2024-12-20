@@ -4,7 +4,7 @@ import remera from '/src/assets/img/remera.webp';
 import bermuda from '/src/assets/img/Bermuda.jpeg';
 import buzos from '/src/assets/img/Buzos.jpeg';
 
-function GroupExample() {
+function Tarjetas() {
   return (
     <Container fluid className="py-5">
     <Row className="g-3 justify-content-center">
@@ -30,4 +30,4 @@ function GroupExample() {
   );
 }
 
-export default GroupExample;
+export default Tarjetas;
