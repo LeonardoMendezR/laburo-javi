@@ -1,0 +1,17 @@
+.card-custom {
+  border: none;
+}
+
+.img-custom {
+  height: 250px; /* Ajusta el tamaño según necesites */
+  object-fit: cover;
+}
+
+.card-custom .btn {
+  margin-top: 10px;
+}
+
+.card-custom .card-title {
+  margin-top: 10px;
+  font-weight: bold;
+}
